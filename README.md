@@ -17,9 +17,9 @@ Welcome to the Student Success Network, a platform designed to facilitate seamle
 
 This project was developed for the CodeFest Hackathon conducted by IIT Varanasi. Team members include:
 
-- **Koushik N** - CIT Chennai(2nd year EEE)
-- **Pravin B** - CIT Chennai(2nd year EEE)
-- **Prithvi Ragavendiran R** (myself) - CIT Chennai(2nd year EEE)
+- **Koushik N** from CIT Chennai(2nd year EEE)
+- **Pravin B** from CIT Chennai(2nd year EEE)
+- **Prithvi Ragavendiran R** (myself) from CIT Chennai(2nd year EEE)
 
 ---
 
@@ -30,6 +30,10 @@ This project was developed for the CodeFest Hackathon conducted by IIT Varanasi.
 - **Advisor Portal**: Assign personalized learning tracks and assignments, review submitted assignments, monitor student progress, and facilitate team creation.
   
 - **Student Portal**: Access pre-created accounts, check daily tasks and assignments, update progress, and communicate with advisors.
+
+- **Chatbot Assistant**: A special chatbot assistant powered by Anthropics Cloud 3 has been provided for students to assist with queries and provide guidance.
+
+- **Discussion Forum**: A common discussion forum is available for both advisors and students to foster collaboration and share insights.
 
 ---
 
@@ -58,6 +62,4 @@ This project was developed for the CodeFest Hackathon conducted by IIT Varanasi.
 
 ## Contact
 
-For any queries, bugs, or issues, please reach out to us at [jofraarcher04@gmail.com](mailto:jofraarcher04@gmail.com).
-
----
+For any queries or issues, please contact us at [jofraarcher04@gmail.com](mailto:jofraarcher04@gmail.com).
