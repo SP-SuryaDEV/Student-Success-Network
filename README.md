@@ -2,6 +2,8 @@
 
 Welcome to the Student Success Network, a platform designed to facilitate seamless communication and collaboration between students, advisors, and administrators.
 
+![Project Image Placeholder](image.png)
+
 ---
 
 ## Table of Contents
