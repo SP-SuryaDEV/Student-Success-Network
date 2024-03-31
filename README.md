@@ -8,6 +8,7 @@ Welcome to the Student Success Network, a platform designed to facilitate seamle
 
 - [Team Members](#team-members)
 - [Features](#features)
+- [Tech Stack](#tech-stack)
 - [Instructions](#instructions)
 - [Contact](#contact)
 
@@ -25,7 +26,7 @@ This project was developed for the CodeFest Hackathon conducted by IIT Varanasi.
 
 ## Features
 
-- **Admin Dashboard**: Oversee portal functionality, upload and process student data, and generate/distribute reports.
+- **Admin Dashboard**: Oversee portal functionality, upload and process student data, and generate/distribute reports using an ML model for future performance prediction.
   
 - **Advisor Portal**: Assign personalized learning tracks and assignments, review submitted assignments, monitor student progress, and facilitate team creation.
   
@@ -37,12 +38,24 @@ This project was developed for the CodeFest Hackathon conducted by IIT Varanasi.
 
 ---
 
+## Tech Stack
+
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Python
+- **Database**: SQLite
+- **Machine Learning**: Scikit-learn
+- **Chatbot**: Anthropic's Claude 3
+- **Email**: smtplib for email notifications
+- **Web Framework**: Streamlit
+
+---
+
 ## Instructions
 
 ### For Admins:
 
 - **Responsibility**: Oversee the portal's functionality and manage student data.
-- **General and Special Reports**: Generate and distribute reports to respective advisors.
+- **General and Special Reports**: Generate and distribute reports to respective advisors using an ML model for future performance prediction.
 
 ### For Advisors:
 
