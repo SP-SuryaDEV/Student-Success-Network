@@ -31,7 +31,7 @@ This project was developed for the CodeFest Hackathon conducted by IIT Varanasi.
   
 - **Student Portal**: Access pre-created accounts, check daily tasks and assignments, update progress, and communicate with advisors.
 
-- **Chatbot Assistant**: A special chatbot assistant powered by Anthropics Cloud 3 has been provided for students to assist with queries and provide guidance.
+- **Chatbot Assistant**: A special chatbot assistant powered by Anthropic's Claude 3 has been provided for students to assist with queries and provide guidance.
 
 - **Discussion Forum**: A common discussion forum is available for both advisors and students to foster collaboration and share insights.
 
