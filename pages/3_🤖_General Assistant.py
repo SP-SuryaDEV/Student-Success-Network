@@ -72,7 +72,7 @@ display_description()
 display_date()
 # Initialize AnthropiC client
 client = anthropic.Anthropic(
-    api_key="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",
+    api_key="#####",
 )
 
 # Function to display quote
