@@ -6,10 +6,20 @@ Welcome to the Student Success Network, a platform designed to facilitate seamle
 
 ## Table of Contents
 
+- [Team Members](#team-members)
 - [Features](#features)
 - [Instructions](#instructions)
 - [Contact](#contact)
-- [Note](#note)
+
+---
+
+## Team Members
+
+This project was developed for the CodeFest Hackathon conducted by IIT Varanasi. Team members include:
+
+- **Koushik N**
+- **Pravin B**
+- **Prithvi Ragavendiran R** (myself) from CIT Chennai EEE 2nd year
 
 ---
 
@@ -49,11 +59,5 @@ Welcome to the Student Success Network, a platform designed to facilitate seamle
 ## Contact
 
 For any queries, bugs, or issues, please reach out to us at [jofraarcher04@gmail.com](mailto:jofraarcher04@gmail.com).
-
----
-
-## Note
-
-This website is under extensive development. We appreciate your patience and understanding. If you encounter any bugs or issues, please contact us immediately.
 
 ---
