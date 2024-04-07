@@ -8,7 +8,6 @@ Welcome to the Student Success Network, a platform designed to facilitate seamle
 
 ## Table of Contents
 
-- [Team Members](#team-members)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Instructions](#instructions)
@@ -16,15 +15,6 @@ Welcome to the Student Success Network, a platform designed to facilitate seamle
 
 ---
 
-## Team Members
-
-This project was developed for the CodeFest Hackathon conducted by IIT Varanasi. Team members include:
-
-- **Koushik N** from CIT Chennai(2nd year EEE)
-- **Pravin B** from CIT Chennai(2nd year EEE)
-- **Prithvi Ragavendiran R** (myself) from CIT Chennai(2nd year EEE)
-
----
 
 ## Features
 
