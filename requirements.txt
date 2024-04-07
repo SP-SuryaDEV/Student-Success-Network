@@ -2,4 +2,4 @@ streamlit
 pillow
 anthropic
 pandas
-
+scikit-learn
