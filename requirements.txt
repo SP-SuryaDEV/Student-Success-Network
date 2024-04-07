@@ -1,0 +1,6 @@
+straemlit
+pillow
+sqlite3
+anthropic
+pandas
+smtplib
