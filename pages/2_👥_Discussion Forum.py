@@ -48,7 +48,7 @@ def get_img_as_base64(file_path):
     return base64.b64encode(data).decode()
 
 # Get sidebar image as base64
-img_path = r"C:\Users\jofra\Desktop\Presentation\MachineKnight\Application\download.jpeg"
+img_path = r"download.jpeg"
 img_base64 = get_img_as_base64(img_path)
 
 # Apply sidebar image background
