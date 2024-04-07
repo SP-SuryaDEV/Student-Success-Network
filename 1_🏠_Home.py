@@ -42,7 +42,7 @@ gif_background = """
 st.markdown(gif_background, unsafe_allow_html=True)
 
 # Adding image background for sidebar
-img_path = r".\download.jpeg"
+img_path = r"download.jpeg"
 
 sidebar_background = f"""
 <style>
