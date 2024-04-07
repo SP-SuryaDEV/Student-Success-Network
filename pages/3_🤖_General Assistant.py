@@ -135,6 +135,6 @@ if prompt:
 with st.container():
     for message in st.session_state.messages:
         if message['role'] == 'user':
-            st.markdown(f"<div class='user-message'><strong>You:</strong> {message['content']}</div>", unsafe_allow_html=True)
+            st.markdown(f"**You:** {message['content']}", unsafe_allow_html=True)
         elif message['role'] == 'assistant':
-            st.markdown(f"<div class='assistant-message'><strong>Assistant:</strong> {message['content']}</div>", unsafe_allow_html=True)
+            st.markdown(f"**Assistant:** {message['content']}", unsafe_allow_html=True)
