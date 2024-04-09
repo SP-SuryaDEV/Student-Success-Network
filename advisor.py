@@ -165,16 +165,14 @@ class StudentReportMaker:
             st.title("Student Report Maker")
             st.warning("Drop The Students Personal Analysis File Got From Admin to get started on report Making for the students")
             photo_placeholder = st.empty()
-            uploaded_file = pd.read_csv('result.csv')
-            if uploaded_file is not None:
-                df = StudentReportMaker.load_data(uploaded_file)
-                st.subheader("Select a student:")
-                selected_name = st.selectbox("Select Name", [None] + list(df["Name"].unique()))
-                if selected_name is not None:
-                    db_file = f"{selected_name}.db"
-                    conn = StudentReportMaker.create_connection(db_file)
-                    StudentReportMaker.create_table(conn, selected_name)
-                    StudentReportMaker.display_student_details(df, selected_name, conn)
+            df = pd.read_csv('result.csv')
+            st.subheader("Select a student:")
+            selected_name = st.selectbox("Select Name", [None] + list(df["Name"].unique()))
+            if selected_name is not None:
+                db_file = f"{selected_name}.db"
+                conn = StudentReportMaker.create_connection(db_file)
+                StudentReportMaker.create_table(conn, selected_name)
+                StudentReportMaker.display_student_details(df, selected_name, conn)
         with tab1:
             manager = AssignmentManager()
             manager.display_assignments_tab()
