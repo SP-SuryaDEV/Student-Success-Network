@@ -165,7 +165,7 @@ class StudentReportMaker:
             st.title("Student Report Maker")
             st.warning("Drop The Students Personal Analysis File Got From Admin to get started on report Making for the students")
             photo_placeholder = st.empty()
-            uploaded_file = pd.read_csv('results.csv')
+            uploaded_file = pd.read_csv('result.csv')
             if uploaded_file is not None:
                 df = StudentReportMaker.load_data(uploaded_file)
                 st.subheader("Select a student:")
