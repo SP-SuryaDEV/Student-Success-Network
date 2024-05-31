@@ -1,4 +1,4 @@
-import anthropic
+import google.generativeai as genai
 import streamlit as st
 import datetime
 import random
@@ -70,10 +70,12 @@ def display_date():
 # Display description and date in the sidebar
 display_description()
 display_date()
-# Initialize AnthropiC client
-client = anthropic.Anthropic(
-    api_key = st.secrets.API_KEY,
-)
+
+if not st.session_state.get('model'):
+    # Initialize Google Gemini client
+    GOOGLE_API_KEY = st.secrets.get('GOOGLE_API_KEY')
+    genai.configure(api_key=GOOGLE_API_KEY)
+    st.session_state.model = genai.GenerativeModel('gemini-pro')
 
 # Function to display quote
 def display_quote():
@@ -108,7 +110,7 @@ with col2:
     display_date()
 
 st.title("College Work Assistant - Chat")
-st.warning("This Is a general Purpose Assistant and whoever can use it but we are not responsible")
+st.warning("This Is a general Purpose Assistant and whoever can use it but we are not responsible.")
 
 def extract_text(content_blocks):
     return '\n'.join([block.text for block in content_blocks])
@@ -123,14 +125,10 @@ if 'messages' not in st.session_state:
 prompt = st.text_input('You:')
 if prompt:
     with st.spinner("Thinking..."):
-        anthropic_response = client.messages.create(
-            model="claude-3-opus-20240229",
-            max_tokens=2000,
-            temperature=0,
-            messages=[{"role": "user", "content": prompt}, {"role": "assistant", "content": ""}]
-        )
+        preprompt = 'This is a Preprompt: You are a Student Assistive Agent for studying purposes only. You will have to list formulas if asked. you may have to tabulate if the keyword "table" or "tabulate" is used'
+        response = model.generate_content(preprompt + '\n\n' + prompt)
     
-    add_to_chat(st.session_state.messages, prompt, extract_text(anthropic_response.content))
+    add_to_chat(st.session_state.messages, prompt, extract_text(response.content))
 
 with st.container():
     for message in st.session_state.messages:
