@@ -135,4 +135,4 @@ with st.container():
         if message['role'] == 'user':
             st.markdown(f"**You:** {message['content']}", unsafe_allow_html=True)
         elif message['role'] == 'assistant':
-            st.markdown(f"**Assistant:** {message['content']}", unsafe_allow_html=True)
+            st.markdown(f"**Assistant:** \n{message['content']}", unsafe_allow_html=True)
