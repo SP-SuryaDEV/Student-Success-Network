@@ -128,7 +128,7 @@ if prompt:
         preprompt = 'This is a Preprompt: You are a Student Assistive Agent for studying purposes only. You will have to list formulas if asked. you may have to tabulate if the keyword "table" or "tabulate" is used'
         response = st.session_state.model.generate_content(preprompt + '\n\n' + prompt)
     
-    add_to_chat(st.session_state.messages, prompt, extract_text(response.text))
+    add_to_chat(st.session_state.messages, prompt, response.text)
 
 with st.container():
     for message in st.session_state.messages:
