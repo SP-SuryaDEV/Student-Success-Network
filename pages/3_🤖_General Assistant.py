@@ -126,7 +126,7 @@ prompt = st.text_input('You:')
 if prompt:
     with st.spinner("Thinking..."):
         preprompt = 'This is a Preprompt: You are a Student Assistive Agent for studying purposes only. You will have to list formulas if asked. you may have to tabulate if the keyword "table" or "tabulate" is used'
-        response = model.generate_content(preprompt + '\n\n' + prompt)
+        response = st.session_state.model.generate_content(preprompt + '\n\n' + prompt)
     
     add_to_chat(st.session_state.messages, prompt, extract_text(response.content))
 
